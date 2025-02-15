@@ -1,0 +1,14 @@
+tag @a remove forward
+tag @a remove backward
+tag @a remove leftward
+tag @a remove rightward
+tag @a remove upward
+tag @a remove downward
+execute as @a at @s anchored feet rotated ~ 0 positioned ^^^30.001 if entity @s[r=30] run tag @s add forward
+execute as @a at @s anchored feet rotated ~ 0 positioned ^^^-30.001 if entity @s[r=30] run tag @s add backward
+execute as @a at @s anchored feet rotated ~ 0 positioned ^30.001^^ if entity @s[r=30] run tag @s add leftward
+execute as @a at @s anchored feet rotated ~ 0 positioned ^-30.001^^ if entity @s[r=30] run tag @s add rightward
+execute as @a at @s anchored feet rotated ~ 0 positioned ^^30.001^ if entity @s[r=30] run tag @s add upward
+execute as @a at @s anchored feet rotated ~ 0 positioned ^^-30.001^ if entity @s[r=30] run tag @s add downward
+
+#forward前 backward后 leftward左 rightward右 upward上 downward下
